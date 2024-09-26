@@ -1,0 +1,92 @@
+body {
+    background-color: #001f21;
+}
+.section {
+    border: dashed 6px #112f33;
+    height: 100%;
+}
+
+img {
+    height: 130px; /* Imposta la larghezza originale dell'immagine */
+    max-height: 150px; /* Imposta una larghezza massima (facoltativo) */
+    transition: transform 0.3s ease; /* Transizione fluida per l'effetto hover */
+    animation: zoom 2s infinite alternate; /* Animazione di ingrandimento */
+    display: block;
+    margin: 15px auto;
+  }
+  
+  @keyframes zoom {
+    0% {
+      transform: scale(1); /* Inizio: dimensione normale */
+    }
+    100% {
+      transform: scale(1.05); /* Fine: ingrandito del 5% */
+    }
+  }
+  
+
+li {
+    color: #ffffff;
+    font-variant: small-caps;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+.domanda {
+    color: #ffffff;
+}
+
+.domanda {
+    color: #ff6666;
+}
+
+.risposta {
+    color: #ffffff;
+}
+
+button {
+    display: block;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px auto;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button.ricomincia {
+    background-color: #888888;
+    color: #ffffff;
+    border: dashed 2px #666666;
+}
+
+button.facile {
+    background-color: darkgreen;
+    color: #ffffff;
+}
+
+button.difficile {
+    background-color: orange;
+    color: #ffffff;
+}
+
+
+button.super {
+    background-color: crimson;
+    color: #ffffff;
+}
+
+
+button.mostraTraduzioni {
+    background-color: #ffffff;
+}
+
+
+.showLivello button.mostraTraduzioni, .showLivello button.ricomincia { display: none; }
+.showLivello button.facile, .showLivello button.difficile, .showLivello button.super {display: block;}
+
+.showDomande button.facile, .showDomande button.difficile, .showDomande button.super, .showDomande .risposta { display: none; }
+.showDomande button.mostraTraduzioni {display: block;}
+
+.showRisposte button.facile, .showRisposte button.difficile, .showRisposte button.super, .showRisposte button.mostraTraduzioni { display: none; }
+
