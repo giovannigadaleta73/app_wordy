@@ -2,9 +2,8 @@ body {
     background-color: #001f21;
 }
 .section {
-    border: dashed 6px #112f33;
     height: 100%;
-}
+    }
 
 img {
     height: 130px; /* Imposta la larghezza originale dell'immagine */
@@ -12,7 +11,7 @@ img {
     transition: transform 0.3s ease; /* Transizione fluida per l'effetto hover */
     animation: zoom 2s infinite alternate; /* Animazione di ingrandimento */
     display: block;
-    margin: 15px auto;
+    margin: 3rem auto 2rem;
   }
   
   @keyframes zoom {
@@ -52,33 +51,39 @@ button {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
+    color: #ffffff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+
 }
 
 button.ricomincia {
     background-color: #888888;
-    color: #ffffff;
     border: dashed 2px #666666;
 }
 
 button.facile {
-    background-color: darkgreen;
-    color: #ffffff;
+    margin-top: 3rem;
+    background-color: #28195b;
+    border: 3px solid #e9fb4f;
 }
 
 button.difficile {
-    background-color: orange;
-    color: #ffffff;
+    background-color: #14455b;
+    border: 3px solid #e9fb4f;
+
 }
 
 
 button.super {
-    background-color: crimson;
-    color: #ffffff;
+    background-color: #5b142d;
+    border: 3px solid #e9fb4f;
+
 }
 
 
 button.mostraTraduzioni {
     background-color: #ffffff;
+    color: #000000;
 }
 
 

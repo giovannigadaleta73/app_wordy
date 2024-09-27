@@ -84,19 +84,19 @@ function App() {
 				</button>
 
 				<button className='facile' onClick={pick2Terms} >
-					FACILE
+					facile
 				</button>
 
 				<button className='difficile' onClick={pick5Terms} >
-					DIFFICILE
+					difficile
 				</button>
 
 				<button className='super' onClick={pick10Terms} >
-					SUPER
+					boss finale
 				</button>
 
 				<button className='mostraTraduzioni' onClick={showRisposteHandler} >
-					Mostra Traduzioni
+					Soluzione
 				</button>
 
 
@@ -104,13 +104,13 @@ function App() {
 
 				{randomTerms.length > 0 && (
 					<div style={{ marginTop: '20px' }}>
-						<ul>
+						<ol>
 							{randomTerms.map((term, index) => (
 								<li key={index} style={{ marginBottom: '10px' }}>
 									<div className='domanda'>{term.italian}</div> <div className='risposta'>{term.french}</div>
 								</li>
 							))}
-						</ul>
+						</ol>
 					</div>
 				)}
 			</div>
